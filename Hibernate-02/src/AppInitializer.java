@@ -42,11 +42,16 @@ public class AppInitializer {
         System.out.println(c3.getSalary());*/
 
         //for delete customer
-        Customer c3 = new Customer();
+        /*Customer c3 = new Customer();
             //catch the object first
             c3.setId("C001");
             //delete
-            session.delete(c3);
+            session.delete(c3);*/
+
+        // second way to delete object
+        /*Customer c3 = session.get(Customer.class, "C001");
+        session.delete(c3);*/
+
 
         transaction.commit();
 
